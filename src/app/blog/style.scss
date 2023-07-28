@@ -1,0 +1,96 @@
+$primary-color-1: #0433ff;
+$primary-color: #526fef;
+$secondary-color: #d7fb07;
+$background-color: #f5f6fa;
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonGroup{
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    border: 0px;
+    background-color: $primary-color;
+    color: white;
+    font-size: 16px;
+}
+
+.dashboard{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.landing{
+    width: 100%;
+    background-color: $primary-color-1;
+    height: 20rem;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        font-weight: 700;
+        font-size: 40px;
+        color: white;
+    }
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -25px;
+    color: white;
+}
+
+#search{
+    height: 50px;
+}
+
+
+.listCategory{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: gray;
+    .activeCategory{
+        cursor: pointer;
+        background-color: $primary-color;
+        padding: 10px 30px 10px 30px;
+        border-radius: 20px;
+        color: white;
+        transition: 1s;
+    }
+    .category{
+        cursor: pointer;
+        padding: 10px 30px 10px 30px;
+
+    }
+}
+
+
+.mainRecent{
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    .imageRecentMain{
+        width: 48%;
+        height: 500px;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+    .author{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .imageAuthor{
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+}
